@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITextViewDelegate, UINavigationControll
     
 
     func useTesseract(img: UIImage, type: TesseractTextType) -> String {
-        var tesseract:G8Tesseract = G8Tesseract(language: "eng", configDictionary: [kG8ParamLoadSystemDawg : "F"], configFileNames: nil, cachesRelatedDataPath: nil, engineMode: G8OCREngineMode.TesseractOnly)
+        var tesseract:G8Tesseract = G8Tesseract(language: "eng", configDictionary: [kG8ParamLoadSystemDawg : "T"], configFileNames: nil, cachesRelatedDataPath: nil, engineMode: G8OCREngineMode.TesseractOnly)
         
         switch (type) {
         case .Text:

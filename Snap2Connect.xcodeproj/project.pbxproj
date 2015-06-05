@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D90A39B81B0601AB00808D13 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D90A39B71B0601AB00808D13 /* libstdc++.dylib */; };
+		D90A39BA1B0601B400808D13 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90A39B91B0601B400808D13 /* CoreImage.framework */; };
+		D90A39BC1B0601C900808D13 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90A39BB1B0601C800808D13 /* AVFoundation.framework */; };
+		D90A39BE1B06022900808D13 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90A39BD1B06022900808D13 /* TesseractOCR.framework */; };
+		D90A39C01B06025600808D13 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90A39BF1B06025600808D13 /* opencv2.framework */; };
+		D910B28A1AFA437400B37D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910B2891AFA437400B37D0F /* AppDelegate.swift */; };
+		D910B28C1AFA437400B37D0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910B28B1AFA437400B37D0F /* ViewController.swift */; };
+		D910B28F1AFA437400B37D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D910B28D1AFA437400B37D0F /* Main.storyboard */; };
+		D910B2911AFA437400B37D0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D910B2901AFA437400B37D0F /* Images.xcassets */; };
+		D910B2941AFA437400B37D0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D910B2921AFA437400B37D0F /* LaunchScreen.xib */; };
+		D910B2A01AFA437400B37D0F /* Snap2ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910B29F1AFA437400B37D0F /* Snap2ConnectTests.swift */; };
+		D930136F1B0F9D6A0071B3DD /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D930136E1B0F9D6A0071B3DD /* tessdata */; };
+		D9431A251B21DA3F009DDD76 /* TextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9431A241B21DA3F009DDD76 /* TextType.swift */; };
+		D9F517C71B0A64D900B6C556 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F517C41B0A634100B6C556 /* GPUImage.framework */; };
+		D9F517C91B0A669900B6C556 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9F517C41B0A634100B6C556 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D910B29A1AFA437400B37D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D910B27C1AFA437400B37D0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D910B2831AFA437400B37D0F;
+			remoteInfo = Snap2Connect;
+		};
+		D9F517C11B0A634100B6C556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F517BB1B0A634100B6C556 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		D9F517C31B0A634100B6C556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F517BB1B0A634100B6C556 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		D9F517C51B0A63E900B6C556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F517BB1B0A634100B6C556 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE209E41943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9F517C81B0A666700B6C556 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D9F517C91B0A669900B6C556 /* GPUImage.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D90A39B71B0601AB00808D13 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		D90A39B91B0601B400808D13 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D90A39BB1B0601C800808D13 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D90A39BD1B06022900808D13 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = ../TesseractOCR.framework; sourceTree = "<group>"; };
+		D90A39BF1B06025600808D13 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../opencv2.framework; sourceTree = "<group>"; };
+		D910B2841AFA437400B37D0F /* Snap2Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap2Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D910B2881AFA437400B37D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D910B2891AFA437400B37D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D910B28B1AFA437400B37D0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D910B28E1AFA437400B37D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D910B2901AFA437400B37D0F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D910B2931AFA437400B37D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D910B2991AFA437400B37D0F /* Snap2ConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Snap2ConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D910B29E1AFA437400B37D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D910B29F1AFA437400B37D0F /* Snap2ConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2ConnectTests.swift; sourceTree = "<group>"; };
+		D930136E1B0F9D6A0071B3DD /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		D9431A241B21DA3F009DDD76 /* TextType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextType.swift; sourceTree = "<group>"; };
+		D9F517B71B0A612800B6C556 /* Snap2Connect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Snap2Connect-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		D9F517BB1B0A634100B6C556 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../Downloads/GPUImage-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D910B2811AFA437400B37D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F517C71B0A64D900B6C556 /* GPUImage.framework in Frameworks */,
+				D90A39BE1B06022900808D13 /* TesseractOCR.framework in Frameworks */,
+				D90A39BC1B0601C900808D13 /* AVFoundation.framework in Frameworks */,
+				D90A39BA1B0601B400808D13 /* CoreImage.framework in Frameworks */,
+				D90A39C01B06025600808D13 /* opencv2.framework in Frameworks */,
+				D90A39B81B0601AB00808D13 /* libstdc++.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D910B2961AFA437400B37D0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D910B27B1AFA437400B37D0F = {
+			isa = PBXGroup;
+			children = (
+				D910B2861AFA437400B37D0F /* Snap2Connect */,
+				D910B29C1AFA437400B37D0F /* Snap2ConnectTests */,
+				D910B2851AFA437400B37D0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D910B2851AFA437400B37D0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D910B2841AFA437400B37D0F /* Snap2Connect.app */,
+				D910B2991AFA437400B37D0F /* Snap2ConnectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D910B2861AFA437400B37D0F /* Snap2Connect */ = {
+			isa = PBXGroup;
+			children = (
+				D9F517BB1B0A634100B6C556 /* GPUImage.xcodeproj */,
+				D9F517B71B0A612800B6C556 /* Snap2Connect-Bridging-Header.h */,
+				D910B2891AFA437400B37D0F /* AppDelegate.swift */,
+				D910B28B1AFA437400B37D0F /* ViewController.swift */,
+				D9431A241B21DA3F009DDD76 /* TextType.swift */,
+				D910B28D1AFA437400B37D0F /* Main.storyboard */,
+				D910B2901AFA437400B37D0F /* Images.xcassets */,
+				D910B2921AFA437400B37D0F /* LaunchScreen.xib */,
+				D910B2871AFA437400B37D0F /* Supporting Files */,
+			);
+			path = Snap2Connect;
+			sourceTree = "<group>";
+		};
+		D910B2871AFA437400B37D0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D930136E1B0F9D6A0071B3DD /* tessdata */,
+				D90A39BF1B06025600808D13 /* opencv2.framework */,
+				D90A39BD1B06022900808D13 /* TesseractOCR.framework */,
+				D90A39BB1B0601C800808D13 /* AVFoundation.framework */,
+				D90A39B91B0601B400808D13 /* CoreImage.framework */,
+				D90A39B71B0601AB00808D13 /* libstdc++.dylib */,
+				D910B2881AFA437400B37D0F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D910B29C1AFA437400B37D0F /* Snap2ConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				D910B29F1AFA437400B37D0F /* Snap2ConnectTests.swift */,
+				D910B29D1AFA437400B37D0F /* Supporting Files */,
+			);
+			path = Snap2ConnectTests;
+			sourceTree = "<group>";
+		};
+		D910B29D1AFA437400B37D0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D910B29E1AFA437400B37D0F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9F517BC1B0A634100B6C556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9F517C21B0A634100B6C556 /* libGPUImage.a */,
+				D9F517C41B0A634100B6C556 /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D910B2831AFA437400B37D0F /* Snap2Connect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D910B2A31AFA437400B37D0F /* Build configuration list for PBXNativeTarget "Snap2Connect" */;
+			buildPhases = (
+				D910B2801AFA437400B37D0F /* Sources */,
+				D910B2811AFA437400B37D0F /* Frameworks */,
+				D910B2821AFA437400B37D0F /* Resources */,
+				D9F517C81B0A666700B6C556 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F517C61B0A63E900B6C556 /* PBXTargetDependency */,
+			);
+			name = Snap2Connect;
+			productName = Snap2Connect;
+			productReference = D910B2841AFA437400B37D0F /* Snap2Connect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D910B2981AFA437400B37D0F /* Snap2ConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D910B2A61AFA437400B37D0F /* Build configuration list for PBXNativeTarget "Snap2ConnectTests" */;
+			buildPhases = (
+				D910B2951AFA437400B37D0F /* Sources */,
+				D910B2961AFA437400B37D0F /* Frameworks */,
+				D910B2971AFA437400B37D0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D910B29B1AFA437400B37D0F /* PBXTargetDependency */,
+			);
+			name = Snap2ConnectTests;
+			productName = Snap2ConnectTests;
+			productReference = D910B2991AFA437400B37D0F /* Snap2ConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D910B27C1AFA437400B37D0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = TechFarm;
+				TargetAttributes = {
+					D910B2831AFA437400B37D0F = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					D910B2981AFA437400B37D0F = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = D910B2831AFA437400B37D0F;
+					};
+				};
+			};
+			buildConfigurationList = D910B27F1AFA437400B37D0F /* Build configuration list for PBXProject "Snap2Connect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D910B27B1AFA437400B37D0F;
+			productRefGroup = D910B2851AFA437400B37D0F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D9F517BC1B0A634100B6C556 /* Products */;
+					ProjectRef = D9F517BB1B0A634100B6C556 /* GPUImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D910B2831AFA437400B37D0F /* Snap2Connect */,
+				D910B2981AFA437400B37D0F /* Snap2ConnectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D9F517C21B0A634100B6C556 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = D9F517C11B0A634100B6C556 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D9F517C41B0A634100B6C556 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = D9F517C31B0A634100B6C556 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D910B2821AFA437400B37D0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D910B28F1AFA437400B37D0F /* Main.storyboard in Resources */,
+				D930136F1B0F9D6A0071B3DD /* tessdata in Resources */,
+				D910B2941AFA437400B37D0F /* LaunchScreen.xib in Resources */,
+				D910B2911AFA437400B37D0F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D910B2971AFA437400B37D0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D910B2801AFA437400B37D0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D910B28C1AFA437400B37D0F /* ViewController.swift in Sources */,
+				D9431A251B21DA3F009DDD76 /* TextType.swift in Sources */,
+				D910B28A1AFA437400B37D0F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D910B2951AFA437400B37D0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D910B2A01AFA437400B37D0F /* Snap2ConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D910B29B1AFA437400B37D0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D910B2831AFA437400B37D0F /* Snap2Connect */;
+			targetProxy = D910B29A1AFA437400B37D0F /* PBXContainerItemProxy */;
+		};
+		D9F517C61B0A63E900B6C556 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImageFramework;
+			targetProxy = D9F517C51B0A63E900B6C556 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D910B28D1AFA437400B37D0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D910B28E1AFA437400B37D0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D910B2921AFA437400B37D0F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D910B2931AFA437400B37D0F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D910B2A11AFA437400B37D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D910B2A21AFA437400B37D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D910B2A41AFA437400B37D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Snap2Connect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Snap2Connect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D910B2A51AFA437400B37D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Snap2Connect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Snap2Connect-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D910B2A71AFA437400B37D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Snap2ConnectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snap2Connect.app/Snap2Connect";
+			};
+			name = Debug;
+		};
+		D910B2A81AFA437400B37D0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Snap2ConnectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snap2Connect.app/Snap2Connect";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D910B27F1AFA437400B37D0F /* Build configuration list for PBXProject "Snap2Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D910B2A11AFA437400B37D0F /* Debug */,
+				D910B2A21AFA437400B37D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D910B2A31AFA437400B37D0F /* Build configuration list for PBXNativeTarget "Snap2Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D910B2A41AFA437400B37D0F /* Debug */,
+				D910B2A51AFA437400B37D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D910B2A61AFA437400B37D0F /* Build configuration list for PBXNativeTarget "Snap2ConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D910B2A71AFA437400B37D0F /* Debug */,
+				D910B2A81AFA437400B37D0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D910B27C1AFA437400B37D0F /* Project object */;
+}

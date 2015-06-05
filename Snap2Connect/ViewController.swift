@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITextViewDelegate, UINavigationControll
     
 
     func useTesseract(img: UIImage, type: TesseractTextType) -> String {
-        var tesseract:G8Tesseract = G8Tesseract(language: "ita", configDictionary: [kG8ParamLoadSystemDawg : "F"], configFileNames: nil, cachesRelatedDataPath: nil, engineMode: G8OCREngineMode.TesseractOnly)
+        var tesseract:G8Tesseract = G8Tesseract(language: "eng", configDictionary: [kG8ParamLoadSystemDawg : "F"], configFileNames: nil, cachesRelatedDataPath: nil, engineMode: G8OCREngineMode.TesseractOnly)
         
         switch (type) {
         case .Text:
@@ -65,6 +65,7 @@ class ViewController: UIViewController, UITextViewDelegate, UINavigationControll
         case .TextAndNumbers:
             //tesseract.charBlacklist = "/.-_:,;!\"£$%&()=\\?^*§°|qwertyuiopasdfghjklzxcvbnm<>"
             tesseract.charWhitelist = "ABCDEFGHIJKLMNOPQRSTUWXYZÙÒÌÈÀ0123456789"
+            println("TextAndNumbers")
             break
             
         case .Date:
@@ -90,9 +91,11 @@ class ViewController: UIViewController, UITextViewDelegate, UINavigationControll
         
         tesseract.image = self.thresholdImage(img)
         tesseract.recognize();
+        println("recognized")
         
         println(tesseract.recognizedText)
         return tesseract.recognizedText.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+        
     }
     
     func thresholdImage(img: UIImage) -> UIImage {
@@ -118,9 +121,8 @@ extension ViewController: UIImagePickerControllerDelegate {
         
         
         dismissViewControllerAnimated(true, completion: {
-            
-            var newPhoto = self.thresholdImage(selectedPhoto)
-            self.useTesseract(newPhoto, type: TesseractTextType.TextAndNumbers)
+            self.useTesseract(selectedPhoto, type: TesseractTextType.TextAndNumbers)
+            println("Dismissed")
         })
         
     }

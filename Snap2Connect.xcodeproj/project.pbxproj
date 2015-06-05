@@ -20,6 +20,7 @@
 		D910B2A01AFA437400B37D0F /* Snap2ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910B29F1AFA437400B37D0F /* Snap2ConnectTests.swift */; };
 		D930136F1B0F9D6A0071B3DD /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = D930136E1B0F9D6A0071B3DD /* tessdata */; };
 		D9431A251B21DA3F009DDD76 /* TextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9431A241B21DA3F009DDD76 /* TextType.swift */; };
+		D9431A331B222ACC009DDD76 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9431A321B222ACC009DDD76 /* libCardIO.a */; };
 		D9F517C71B0A64D900B6C556 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F517C41B0A634100B6C556 /* GPUImage.framework */; };
 		D9F517C91B0A669900B6C556 /* GPUImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D9F517C41B0A634100B6C556 /* GPUImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -86,6 +87,15 @@
 		D910B29F1AFA437400B37D0F /* Snap2ConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2ConnectTests.swift; sourceTree = "<group>"; };
 		D930136E1B0F9D6A0071B3DD /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		D9431A241B21DA3F009DDD76 /* TextType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextType.swift; sourceTree = "<group>"; };
+		D9431A2A1B222ACC009DDD76 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		D9431A2B1B222ACC009DDD76 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		D9431A2C1B222ACC009DDD76 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		D9431A2D1B222ACC009DDD76 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		D9431A2E1B222ACC009DDD76 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		D9431A2F1B222ACC009DDD76 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		D9431A301B222ACC009DDD76 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		D9431A311B222ACC009DDD76 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		D9431A321B222ACC009DDD76 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
 		D9F517B71B0A612800B6C556 /* Snap2Connect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Snap2Connect-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D9F517BB1B0A634100B6C556 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = "../../../Downloads/GPUImage-master/framework/GPUImage.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +109,7 @@
 				D90A39BE1B06022900808D13 /* TesseractOCR.framework in Frameworks */,
 				D90A39BC1B0601C900808D13 /* AVFoundation.framework in Frameworks */,
 				D90A39BA1B0601B400808D13 /* CoreImage.framework in Frameworks */,
+				D9431A331B222ACC009DDD76 /* libCardIO.a in Frameworks */,
 				D90A39C01B06025600808D13 /* opencv2.framework in Frameworks */,
 				D90A39B81B0601AB00808D13 /* libstdc++.dylib in Frameworks */,
 			);
@@ -151,6 +162,7 @@
 		D910B2871AFA437400B37D0F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9431A291B222ACC009DDD76 /* CardIO */,
 				D930136E1B0F9D6A0071B3DD /* tessdata */,
 				D90A39BF1B06025600808D13 /* opencv2.framework */,
 				D90A39BD1B06022900808D13 /* TesseractOCR.framework */,
@@ -177,6 +189,22 @@
 				D910B29E1AFA437400B37D0F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9431A291B222ACC009DDD76 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				D9431A2A1B222ACC009DDD76 /* CardIO.h */,
+				D9431A2B1B222ACC009DDD76 /* CardIOCreditCardInfo.h */,
+				D9431A2C1B222ACC009DDD76 /* CardIODetectionMode.h */,
+				D9431A2D1B222ACC009DDD76 /* CardIOPaymentViewController.h */,
+				D9431A2E1B222ACC009DDD76 /* CardIOPaymentViewControllerDelegate.h */,
+				D9431A2F1B222ACC009DDD76 /* CardIOUtilities.h */,
+				D9431A301B222ACC009DDD76 /* CardIOView.h */,
+				D9431A311B222ACC009DDD76 /* CardIOViewDelegate.h */,
+				D9431A321B222ACC009DDD76 /* libCardIO.a */,
+			);
+			path = CardIO;
 			sourceTree = "<group>";
 		};
 		D9F517BC1B0A634100B6C556 /* Products */ = {
@@ -455,6 +483,10 @@
 				);
 				INFOPLIST_FILE = Snap2Connect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Snap2Connect/CardIO",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Snap2Connect-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -472,6 +504,10 @@
 				);
 				INFOPLIST_FILE = Snap2Connect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Snap2Connect/CardIO",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Snap2Connect-Bridging-Header.h";
 			};
